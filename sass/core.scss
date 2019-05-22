@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+html {
+	font-size: 16px;
+	color: $black;
+}
+
+body {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.container {
+	@include min-max(320px, 100%, 0);
+}
+
+.wrap {
+	@include min-max(320px, 1140px, 15px);
+}
+
+@media (max-height: 740px), (max-width: 1024px) {
+
+	.fp-responsive {
+
+		.projects {
+
+			div.projects__wrap {
+				height: auto !important;
+			}
+
+		}
+
+		.header, .projects, .details, .list-of-works, .calculator, .contacts {
+			height: auto !important;
+		}
+
+	}
+
+
+}
+
+.fp-slides {
+	max-width: 1110px;
+	margin: 0 auto;
+	position: relative;
+}
+
+div.fp-controlArrow.fp-prev {
+	border: none;
+	background: url("../img/arrow-prev.svg");
+	width: 24px;
+	height: 24px;
+	bottom: 25px;
+	top: auto;
+	left: calc(100% - 80px);
+}
+
+div.fp-controlArrow.fp-next {
+	border: none;
+	background: url("../img/arrow-next.svg");
+	width: 24px;
+	height: 24px;
+	bottom: 25px;
+	top: auto;
+	left: auto;
+	right: 15px;
+}

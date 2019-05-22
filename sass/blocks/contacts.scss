@@ -1,0 +1,172 @@
+.contacts {
+  background: url("../img/map.jpg") 65% 150px $black no-repeat;
+  background-size: cover;
+  display: block !important;
+
+  .fp-tableCell {
+    height: auto !important;
+    vertical-align: initial;
+    display: block;
+  }
+
+}
+
+.contacts__wrap {
+  padding-bottom: 170%;
+  padding-top: 30px;
+}
+
+.contacts__title {
+  font-size: px-to-rem(32px);
+  line-height: px-to-rem(37px);
+  color: $primary;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.contacts__info {
+  border-radius: 5px;
+  background-color: $white;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.contacts__phone, .contacts__mail, .contacts__address {
+  margin: 0 0 20px 0;
+
+  span {
+    display: block;
+    font-size: px-to-rem(14px);
+    line-height: px-to-rem(16px);
+    font-weight: 700;
+    background: url("../img/tel.svg") left center no-repeat;
+    padding-left: 30px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: px-to-rem(17px);
+    line-height: px-to-rem(24px);
+    color: $black;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 30px;
+    transition-duration: 500ms;
+    transition-property: color;
+
+    &:hover {
+      color: $primary;
+    }
+
+  }
+
+}
+
+.contacts__mail {
+  
+  span {
+    background-image: url("../img/mail.svg");
+  }
+  
+}
+
+.contacts__address {
+
+  span {
+    background-image: url("../img/map.svg");
+    line-height: px-to-rem(24px);
+
+    &:last-child {
+      font-size: px-to-rem(17px);
+      line-height: px-to-rem(24px);
+      color: $black;
+      display: inline-block;
+      margin-top: 5px;
+      background: none;
+      font-weight: 400;
+    }
+
+  }
+
+}
+
+.contacts__guest {
+  font-size: px-to-rem(16px);
+  line-height: px-to-rem(19px);
+}
+
+.contacts__shema {
+  font-size: px-to-rem(17px);
+  line-height: px-to-rem(24px);
+  margin-bottom: 0;
+
+  span {
+    display: block;
+  }
+
+  a {
+    text-decoration: none;
+    color: #FFCE00;
+  }
+
+}
+
+@media (min-width: 560px) {
+
+  .contacts__wrap {
+    padding-bottom: 100%;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .contacts {
+    background-position: 75% 150px;
+  }
+
+  .contacts__wrap {
+    padding-bottom: 70%;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .contacts {
+    background-position: center top;
+    display: table !important;
+
+    .fp-tableCell {
+      height: inherit !important;
+      vertical-align: middle;
+      display: table-cell;
+    }
+
+  }
+
+  .contacts__title {
+    text-align: left;
+    max-width: 455px;
+    margin: 20px 0;
+  }
+
+  .contacts__wrap {
+    padding-bottom: 10px;
+  }
+
+  .contacts__info {
+    max-width: 358px;
+    margin-top: 30px;
+  }
+
+}
+
+@media (min-resolution: 2dppx) {
+
+  .contacts {
+    background-image: url("../img/map-2x.jpg");
+  }
+
+}

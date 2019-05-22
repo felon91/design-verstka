@@ -1,0 +1,134 @@
+.main-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  &::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.8);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-property: opacity;
+  }
+
+}
+
+.main-menu__list {
+  list-style: none;
+  padding: 0;
+  background: url("../img/girl.png") center bottom no-repeat $primary;
+  z-index: 200;
+  position: relative;
+  margin: 0;
+  height: 100%;
+  max-width: 300px;
+  width: 100%;
+  padding-left: 64px;
+  padding-top: 85px;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+  transition-property: transform;
+  transition-duration: 500ms;
+  overflow-y: auto;
+}
+
+.main-menu__item {
+  margin: 20px 0;
+}
+
+.main-menu__link, .main-menu__close {
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(16px);
+  text-decoration: none;
+  color: $black;
+  border: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+}
+
+.main-menu__close {
+  padding-left: 30px;
+  background: url("../img/close.svg") left center no-repeat;
+}
+
+.main-menu__phone {
+  font-size: px-to-rem(24px);
+  line-height: px-to-rem(28px);
+  text-decoration: none;
+  color: $black;
+}
+
+.main-menu__item--phone {
+  margin-top: 35px;
+  margin-bottom: 24px;
+  display: none;
+}
+
+.main-menu__btn {
+  @include btn {
+    width: 100%;
+    color: $black;
+    background-color: $white;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  display: none;
+}
+
+.main-menu__callback {
+  font-size: px-to-rem(14px);
+  line-height: px-to-rem(16px);
+  opacity: .5;
+  margin-top: 25px;
+  margin-bottom: 0;
+  display: none;
+}
+
+.main-menu--active {
+  z-index: 200;
+
+  .main-menu__list {
+    transform: translateX(0);
+  }
+
+  &::after {
+    opacity: 1;
+  }
+
+}
+
+@media (max-height: 768px) {
+
+  .main-menu__list {
+    background: url("../img/girl-mobile.png") right top no-repeat $primary;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    max-width: 320px;
+  }
+
+  .main-menu__item--phone {
+    display: block;
+  }
+
+  .main-menu__btn {
+    display: block;
+  }
+
+  .main-menu__callback {
+    display: block;
+  }
+
+}
