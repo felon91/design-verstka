@@ -10,25 +10,27 @@
 <body>
 <div class="container">
 	<div class="fixed">
-		<div class="fixed__hamburger">
-			<span></span>
-			<span></span>
-			<span></span>
+		<div class="fixed__wrap wrap">
+			<div class="fixed__hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="fixed__repair">
+				<p>Ремонт <span>Номер 1 в Тамбове</span></p>
+			</div>
+			<div class="fixed__map">
+				<p>Тамбов <span>ул. Магистральная</span></p>
+			</div>
+			<div class="fixed__phone">
+				<a href="tel:88001234567">
+					<img src="img/phone.svg" alt="Телефон">
+					<span>8 800 123 45 67</span>
+				</a>
+			</div>
+			<button class="fixed__btn">Закажите звонок</button>
+			<p class="fixed__callback">Перезвоним<br> за 24 секунды</p>
 		</div>
-		<div class="fixed__repair">
-			<p>Ремонт <span>Номер 1 в Тамбове</span></p>
-		</div>
-		<div class="fixed__map">
-			<p>Тамбов <span>ул. Магистральная</span></p>
-		</div>
-		<div class="fixed__phone">
-			<a href="tel:88001234567">
-				<img src="img/phone.svg" alt="Телефон">
-				<span>8 800 123 45 67</span>
-			</a>
-		</div>
-		<button class="fixed__btn">Закажите звонок</button>
-		<p class="fixed__callback">Перезвоним<br> за 24 секунды</p>
 	</div>
 	<ul class="menu">
 		<li data-menuanchor="firstPage" class="menu__item active">
@@ -86,7 +88,7 @@
 		<span>Скрольте<br>ниже</span>
 	</button>
 	<div class="fullpage">
-		<header class="header fullpage-item">
+		<header class="header fullpage-item fp-auto-height-responsive">
 			<div class="header__wrap wrap">
 				<h1 class="header__title">Ремонт квартир в Тамбове</h1>
 				<h2 class="header__subtitle">от 5000 Р/м сроком от 10 дней с гарантией 1 год</h2>
@@ -116,11 +118,11 @@
 				</ul>
 			</div>
 		</header>
-		<section class="projects fullpage-item">
+		<section class="projects fullpage-item fp-auto-height-responsive">
 			<div class="projects__slides">
-				<h2 class="projects__title">с 2012 года успешно сдали более 300 объектов</h2>
-				<p class="projects__example">Вот несколько примеров</p>
 				<div class="projects__wrap wrap slide">
+					<h2 class="projects__title">с 2012 года успешно сдали более 300 объектов</h2>
+					<p class="projects__example">Вот несколько примеров</p>
 					<div class="projects__gallery">
 						<div class="projects__big">
 							<img src="img/gallery-big.jpg" alt="">
@@ -180,6 +182,8 @@
 					</div>
 				</div>
 				<div class="projects__wrap wrap slide">
+					<h2 class="projects__title">с 2012 года успешно сдали более 300 объектов</h2>
+					<p class="projects__example">Вот несколько примеров</p>
 					<div class="projects__gallery">
 						<div class="projects__big">
 							<img src="img/gallery-big.jpg" alt="">
@@ -239,6 +243,8 @@
 					</div>
 				</div>
 				<div class="projects__wrap wrap slide">
+					<h2 class="projects__title">с 2012 года успешно сдали более 300 объектов</h2>
+					<p class="projects__example">Вот несколько примеров</p>
 					<div class="projects__gallery">
 						<div class="projects__big">
 							<img src="img/gallery-big.jpg" alt="">
@@ -300,7 +306,7 @@
 				<div class="projects__counts"><span class="projects__first">1</span>/<span class="projects__last">1</span></div>
 			</div>
 		</section>
-		<section class="details fullpage-item">
+		<section class="details fullpage-item fp-auto-height-responsive">
 			<div class="details__wrap wrap">
 				<h2 class="details__title">При ремонте помещений учитываем все детали</h2>
 				<p class="details__text">Качество ремонта соотвествует ожиданиям клиента. Потому что для своих ремонтов мы используем исключительно качественные материалы партнеров.</p>
@@ -312,7 +318,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="list-of-works fullpage-item">
+		<section class="list-of-works fullpage-item fp-auto-height-responsive">
 			<div class="list-of-works__wrap wrap">
 				<h2 class="list-of-works__title">Вот так мы упрощаем жизнь наших клиентов</h2>
 				<ul class="list-of-works__block">
@@ -351,7 +357,7 @@
 				</ul>
 			</div>
 		</section>
-		<section class="calculator fullpage-item">
+		<section class="calculator fullpage-item fp-auto-height-responsive">
 			<div class="calculator__wrap wrap">
 				<h2 class="calculator__title">Расчитайте стоимость ремонта</h2>
 				<picture>
@@ -426,7 +432,7 @@
 				</form>
 			</div>
 		</section>
-		<section class="contacts fullpage-item">
+		<section class="contacts fullpage-item fp-auto-height-responsive">
 			<div class="contacts__wrap wrap">
 				<h2 class="contacts__title">Свяжитесь с нами любым удобным способом</h2>
 				<div class="contacts__info">

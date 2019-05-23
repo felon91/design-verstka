@@ -4,9 +4,13 @@
   display: block !important;
 
   .fp-tableCell {
-    height: auto !important;
-    vertical-align: initial;
-    display: block;
+    display: flex;
+    justify-content: center;
+
+    > div {
+      flex-basis: 100%;
+    }
+
   }
 
 }
@@ -15,7 +19,7 @@
   position: relative;
   z-index: 3;
   padding-bottom: 10px;
-  padding-top: 30px;
+  padding-top: 100px;
 }
 
 .calculator__title {
@@ -35,15 +39,10 @@
 
 @media (min-width: 1024px) {
 
-  .calculator {
-    display: table !important;
-
-    .fp-tableCell {
-      height: inherit !important;
-      vertical-align: middle;
-      display: table-cell;
-    }
-
+  .calculator__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .calculator__title {
@@ -55,7 +54,7 @@
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(calc(-50% + 40px));
   }
 
   .calculator__calc {

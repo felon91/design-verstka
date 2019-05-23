@@ -9,6 +9,8 @@ global.$ = {
   path: {
     config: require('./gulp/config.js'),
     jquery: './js/jquery.js',
+    scrolloverflow: './js/scrolloverflow.min.js',
+    fullpage: './js/fullpage.min.js',
     js: './js/**/*.js',
   }
 };

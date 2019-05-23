@@ -17,18 +17,15 @@
   }
 
   .fp-tableCell {
-    height: auto !important;
-    vertical-align: initial;
-    display: block;
+    display: flex;
+    justify-content: center;
   }
 
 }
 
 .list-of-works__wrap {
-  position: relative;
-  z-index: 3;
   padding-bottom: 10px;
-  padding-top: 30px;
+  padding-top: 100px;
 }
 
 .list-of-works__title {
@@ -104,26 +101,21 @@
 
 @media (min-width: 1024px) {
 
-  .list-of-works {
-    display: table !important;
-
-    .fp-tableCell {
-      height: inherit !important;
-      vertical-align: middle;
-      display: table-cell;
-    }
-
-  }
-
   .list-of-works__title {
     text-align: left;
+  }
+
+  .list-of-works__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .list-of-works__block {
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 30px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 30px;
   }
 

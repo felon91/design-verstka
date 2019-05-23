@@ -4,16 +4,20 @@
   display: block !important;
 
   .fp-tableCell {
-    height: auto !important;
-    vertical-align: initial;
-    display: block;
+    display: flex;
+    justify-content: center;
+
+    > div {
+      flex-basis: 100%;
+    }
+
   }
 
 }
 
 .contacts__wrap {
   padding-bottom: 170%;
-  padding-top: 30px;
+  padding-top: 100px;
 }
 
 .contacts__title {
@@ -136,14 +140,12 @@
 
   .contacts {
     background-position: center top;
-    display: table !important;
+  }
 
-    .fp-tableCell {
-      height: inherit !important;
-      vertical-align: middle;
-      display: table-cell;
-    }
-
+  .contacts__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .contacts__title {

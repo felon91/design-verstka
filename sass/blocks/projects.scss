@@ -15,10 +15,9 @@
   max-width: 1110px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 70px;
-  padding-bottom: 30px;
   margin: 0 auto;
   position: relative;
+  height: 100%;
 }
 
 .projects__title {
@@ -38,7 +37,7 @@
 }
 
 .projects__gallery {
-  margin-top: 35px;
+  margin-top: 15px;
 }
 
 .projects__big {
@@ -156,15 +155,24 @@
 .projects__counts {
   position: absolute;
   left: 15px;
-  bottom : 25px;
+  bottom : 15px;
   font-size: px-to-rem(14px);
   line-height: px-to-rem(22px);
   color: #787878;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1;
 }
 
 .projects__first {
   font-size: px-to-rem(20px);
   color: $white;
+}
+
+.projects .fp-scroller {
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 @media (min-width: 480px) {
@@ -199,7 +207,6 @@
 @media (min-width: 1024px) {
 
   .projects {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -218,11 +225,15 @@
     margin-bottom: 15px;
   }
 
-  .projects__wrap, .projects div.fp-tableCell {
+  .projects__wrap, .projects div.fp-scroller, .projects .fp-tableCell {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-column-gap: 30px;
-    height: auto !important;
+    align-content: center;
+  }
+
+  .fp-scrollable {
+    grid-column:  1 / -1;
   }
 
   .projects__gallery {

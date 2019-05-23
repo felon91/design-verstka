@@ -2,9 +2,8 @@ $(document).ready(function() {
   $('.fullpage').fullpage({
     scrollingSpeed: 1000,
     sectionSelector: '.fullpage-item',
-    // responsiveWidth: 1024,
-    // responsiveHeight: 740,
     scrollOverflow: true,
+    responsiveHeight: 360,
     anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
     menu: '.menu',
     afterRender: function(){

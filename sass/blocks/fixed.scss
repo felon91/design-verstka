@@ -1,15 +1,18 @@
 .fixed {
-  display: flex;
-  align-items: center;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
   color: $white;
-  width: calc(100% - 30px);
-  max-width: 1110px;
   box-sizing: border-box;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.fixed__wrap {
+  display: flex;
+  align-items: center;
 }
 
 .fixed__hamburger {

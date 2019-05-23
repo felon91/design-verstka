@@ -25,31 +25,39 @@ body {
 	@include min-max(320px, 1140px, 15px);
 }
 
-@media (max-height: 740px), (max-width: 1024px) {
-
-	.fp-responsive {
-
-		.projects {
-
-			div.projects__wrap {
-				height: auto !important;
-			}
-
-		}
-
-		.header, .projects, .details, .list-of-works, .calculator, .contacts {
-			height: auto !important;
-		}
-
-	}
-
-
+.fp-tableCell {
+	position: relative;
+	z-index: 3;
 }
 
+//@media (max-height: 740px), (max-width: 1024px) {
+//
+//	.fp-responsive {
+//
+//		.projects {
+//
+//			div.projects__wrap {
+//				height: auto !important;
+//			}
+//
+//		}
+//
+//		.header, .projects, .details, .list-of-works, .calculator, .contacts {
+//			height: auto !important;
+//		}
+//
+//	}
+//
+//
+//}
+
 .fp-slides {
-	max-width: 1110px;
 	margin: 0 auto;
 	position: relative;
+}
+
+div.fp-controlArrow {
+	margin-top: 0;
 }
 
 div.fp-controlArrow.fp-prev {
